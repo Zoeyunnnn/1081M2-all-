@@ -107,24 +107,17 @@ public class Zoee {
 //        Scanner sc = new Scanner(System.in);
 //        int n = sc.nextInt();
 //
-//        int sum = 0;
-//        for (int i=1;i<=n;i++){
-//            if (n%i==0){
-//                sum = i;
-//                System.out.println(i);
-//            }
+//        for (int i=1;i<=n;i++) {
+//            if (n % i == 0) System.out.println(i);
 //        }
 
 
 //        Scanner sc = new Scanner(System.in);
 //        int n = sc.nextInt();
-//        char c = sc.next().charAt(0);
 //
-//        char sum=c;
+//        char c= sc.next().charAt(0);
 //        for (int i=0;i<n;i++){
-//            for (int j=0;j<n;j++){
-//                System.out.print(c);
-//            }
+//            for (int j=0;j<n;j++) System.out.print(c);
 //            System.out.println();
 //        }
 
