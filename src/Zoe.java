@@ -87,5 +87,20 @@ public class Zoe {
 //            System.out.println(i*(j));
 //        }
 
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int a=0,b=0,c=0;
+        while (n!=-999) {
+            if (n > 0) {
+                a++;
+            } else if (n == 0) {
+                b++;
+            } else {
+                c++;
+            }
+            n = sc.nextInt();
+        }
+        System.out.println(a+"\n"+b+"\n"+c+"\n");
     }
 }
