@@ -73,5 +73,19 @@ public class Zoe {
 //     }
 //        System.out.println(sum);
 
+//n*m
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        int m = sc.nextInt();
+//
+//        int sum=0;int i,j;
+//        for (i=1;i<=n;i++){
+//            for (j=1;j<m;j++){
+//             sum = i*j;
+//             System.out.print(sum+"\t");
+//            }
+//            System.out.println(i*(j));
+//        }
+
     }
 }
