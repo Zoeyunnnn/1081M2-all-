@@ -87,20 +87,45 @@ public class Zoe {
 //            System.out.println(i*(j));
 //        }
 
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+//-999打斷
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//
+//        int a=0,b=0,c=0;
+//        while (n!=-999) {
+//            if (n > 0) {
+//                a++;
+//            } else if (n == 0) {
+//                b++;
+//            } else {
+//                c++;
+//            }
+//            n = sc.nextInt();
+//        }
+//        System.out.println(a+"\n"+b+"\n"+c+"\n");
 
-        int a=0,b=0,c=0;
-        while (n!=-999) {
-            if (n > 0) {
-                a++;
-            } else if (n == 0) {
-                b++;
-            } else {
-                c++;
-            }
-            n = sc.nextInt();
-        }
-        System.out.println(a+"\n"+b+"\n"+c+"\n");
+//M2Q18 連續整數相加
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//
+//        int sum=0,j=1;String str="";
+//        for (int i=1;i<n;i++){
+//            j = i;
+//            str = "";
+//            sum = 0;    /*每一回合變數值歸零*/
+//            while (sum<n && j<n){
+//                sum += j;
+//                if (sum == n){
+//                    str += "+"+Integer.toString(j);
+//                    System.out.println(str);
+//                }else {
+//                    if (i==j){
+//                        str = Integer.toString(j);
+//                    }else {
+//                        str = str+ "+" + Integer.toString(j);
+//                    }j++;
+//                }
+//            }
+//        }
     }
 }
