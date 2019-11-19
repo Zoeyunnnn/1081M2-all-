@@ -105,27 +105,29 @@ public class Zoe {
 //        System.out.println(a+"\n"+b+"\n"+c+"\n");
 
 //M2Q18 連續整數相加
-//        Scanner sc = new Scanner(System.in);
-//        int n = sc.nextInt();
-//
-//        int sum=0,j=1;String str="";
-//        for (int i=1;i<n;i++){
-//            j = i;
-//            str = "";
-//            sum = 0;    /*每一回合變數值歸零*/
-//            while (sum<n && j<n){
-//                sum += j;
-//                if (sum == n){
-//                    str += "+"+Integer.toString(j);
-//                    System.out.println(str);
-//                }else {
-//                    if (i==j){
-//                        str = Integer.toString(j);
-//                    }else {
-//                        str = str+ "+" + Integer.toString(j);
-//                    }j++;
-//                }
-//            }
-//        }
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        boolean flog = true;
+        int sum=0,j=1;String str="";
+        for (int i=1;i<n;i++){
+            j = i;
+            str = "";
+            sum = 0;    /*每一回合變數值歸零*/
+            while (sum<n && j<n){
+                sum += j;
+                if (sum == n){
+                    flog = true;
+                    str += "+"+Integer.toString(j);
+                    System.out.println(str);
+                }else {
+                    if (i==j){
+                        str = Integer.toString(j);
+                    }else {
+                        str = str+ "+" + Integer.toString(j);
+                    }j++;
+                }
+            }
+        }
     }
 }

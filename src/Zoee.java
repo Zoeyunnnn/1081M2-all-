@@ -1,4 +1,5 @@
 import java.util.*;
+import java.math.BigInteger;
 public class Zoee {
     public static void main(String[] args) {
 
@@ -187,7 +188,7 @@ public class Zoee {
 //        int n = sc.nextInt();
 //
 //        for (int i=1;i<=n;i++){
-//            for (int j=1;j<=n-i;j++){     /*(int j=n;j>i;j--)*/
+//            for (int j=n;j>i;j--){     /*(int j=1;j<=n-i;j++)*/
 //                System.out.print(" ");
 //            }for (int t=1;t<=2*i-1;t++){
 //                System.out.print('*');
@@ -264,24 +265,79 @@ public class Zoee {
 //        System.out.println(sum);
 
 //M2Q19 數列
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//
+//        int i = 1,j = 1;
+//        while (i<=n){
+//            System.out.print(i+"\t");
+//            i += j;
+//            j++;
+//        }
+//        System.out.println(i);
+//        i = 1;
+//        while (i<=n+1) {
+//            for (int k = 1; k <= i; k++) {
+//                System.out.print(i + "\t");
+//            }
+//            i++;
+//        }
+//        System.out.println();
 
-        int i = 1,j = 1;
-        while (i<n){
-            System.out.print(i+"\t");
-            i += j;
-            j++;
-        }
-        System.out.println(i);
-        i = 1;
-        while (i<=n+1) {
-            for (int k = 1; k <= i; k++) {
-                System.out.print(i + "\t");
-            }
-            i++;
-        }
-        System.out.println();
+//M2Q21 連續0的個數(100!大於long的範圍so)
+       /*import java.math.BigInteger;*/
+//        Scanner sc =  new Scanner(System.in);
+//        int n = sc.nextInt();
+//
+//        int count=0;
+//        BigInteger r = new BigInteger("1");
+//        for (int i=n;i>1;i--){
+//            r = r.multiply(new BigInteger(Integer.toString(i)));
+//            /*multiply:乘法函數*/ /*以新的乘法後r取代原r(單位為BigInteger)*/
+//        }while (r.mod(new BigInteger("10")).intValue()==0){
+//            /*mod:(取模函數)取得除法中餘數*/
+//            count++;
+//            r = r.divide(new BigInteger("10"));
+//            /*divide:*/
+//        }
+//        System.out.println(count);
+
+//M2Q22 直角三角形邊長
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//
+//        for (int i=3;i<n;i++){
+//            for (int j=i+1;j<n;j++){
+//                for (int k=j+1;k<n;k++){
+//                    if ((i+j+k)<=n){
+//                        if ((i*i+j*j)==k*k){
+//                            System.out.println(i+"\t"+j+"\t"+k);
+//                        }
+//                    }
+//                }
+//            }
+//        }
+
+//M2Q23 數字反轉
+//        Scanner sc = new Scanner(System.in);
+//        Long n = sc.nextLong();
+//
+//        while (n>0){
+//            System.out.print(n%10);
+//            n /= 10;
+//        }
+//        System.out.println();
+
+//M2Q26
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//
+//        int k = n;
+//        while (n>=3){
+//            k += n/3;
+//            n = n/3+n%3;
+//        }
+//        System.out.println(k);
     }
 }
 
