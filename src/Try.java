@@ -337,5 +337,15 @@ public class Try {
 //        }
 //        System.out.println(sum);
 
+//Q26
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//
+//        int count=n;
+//        while (n>=3){
+//            count += n/3;
+//            n = n/3+n%3;
+//        }
+//        System.out.println(count);
     }
 }
