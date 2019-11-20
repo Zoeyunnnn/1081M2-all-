@@ -310,11 +310,11 @@ public class Try {
 //        int n = sc.nextInt();
 //
 //        int sum = 0;int i=0;
-//        while (sum<n){
+//        while (sum<=n){
 //            i++;
 //            sum += i;
-//        }if (sum==n) System.out.println(i);
-//        else if (sum>n) System.out.println((i-1));
+//        }
+//        System.out.println(i-1);
 
 //Q25
 //        Scanner sc = new Scanner(System.in);
