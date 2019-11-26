@@ -1,3 +1,4 @@
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class Try {
@@ -278,22 +279,23 @@ public class Try {
 
 //Q21
         /*import java.math.BigInteger;*/
-//        Scanner sc =  new Scanner(System.in);
-//        int n = sc.nextInt();
-//
-//        int count=0;
-//        BigInteger r = new BigInteger("1"); /*BigInteger初始值為1*/
-//        /*BigInteger為一類別，建立名為r的物件*/
-//        for (int i=n;i>1;i--){
-//            r = r.multiply(new BigInteger(Integer.toString(i)));
-//            /*multiply:乘法函數*/ /*以新的乘法後r取代原r(單位為BigInteger)*/
-//        }while (r.mod(new BigInteger("10")).intValue()==0){
-//            /*mod:(取模函數)取得除法中餘數*/
-//            count++;
-//            r = r.divide(new BigInteger("10"));
-//            /*divide:除法函數*/
-//        }
-//        System.out.println(count);
+        Scanner sc =  new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int count = 0;
+        BigInteger r = new BigInteger("1"); /*BigInteger初始值為1*/
+        /*BigInteger為一類別，建立名為r的物件*/
+        for (int i = n; i > 1; i--) {
+            r = r.multiply(new BigInteger(Integer.toString(i)));
+            /*multiply:乘法函數*/ /*以新的乘法後r取代原r(單位為BigInteger)*/
+        }
+        while (r.mod(new BigInteger("10")).intValue() == 0) {
+            /*mod:(取模函數)取得除法中餘數*/
+            count++;
+            r = r.divide(new BigInteger("10"));
+            /*divide:除法函數*/
+        }
+        System.out.println(count);
 
 //Q22
 //        Scanner sc = new Scanner(System.in);
